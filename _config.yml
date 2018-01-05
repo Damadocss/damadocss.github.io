@@ -7,14 +7,14 @@ title: A Dama do CSS
 subtitle: 
 description: A blog about Front-end Developer by Simone Amorim
 author: Simone Amorim
-language:
-timezone:
+language: default
+timezone: America/Recife
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://simoneas02.github.io/
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title/
 permalink_defaults:
 
 # Directory
@@ -61,7 +61,7 @@ tag_map:
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
+date_format: DD[/]MM[/]YYYY
 time_format: HH:mm:ss
 
 # Pagination

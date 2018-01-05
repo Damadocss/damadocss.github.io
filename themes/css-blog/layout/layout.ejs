@@ -1,19 +1,16 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>A Dama do CSS</title>
-</head>
-<body>
-  <%- partial('partial/header') %>
+  
+  <%- partial('partial/head') %>
 
-  <br/>
+  <body>
+    <%- partial('partial/header') %>
 
-  <%- body %>
+    <main>
+      <%- body %>
+    </main>
 
-  <br/>
+    <%- partial('partial/footer') %>
+  </body>
 
-  <%- partial('partial/footer') %>
-</body>
 </html>
