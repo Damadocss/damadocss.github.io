@@ -1,0 +1,36 @@
+.post-preview
+  border 1px solid $dev-color
+  border-radius 5px
+  padding $internal-spacing
+
+  &:hover
+    background $hover-color
+    cursor pointer
+
+.post-preview__link
+  text-decoration none
+  color $description-color
+
+.post-preview__link__header__title
+  title()
+  border 1px solid $dev-color
+
+@media $small-screen
+  .post-preview__link__header__title
+    font-size 42px
+
+@media $medium-screen
+  .post-preview__link__header__title
+    font-size 52px
+
+.post-preview__link__header__text-info
+  padding $internal-spacing
+  
+.post-preview__link__header__date
+  padding $internal-spacing
+  border 1px solid $dev-color
+
+.post-preview__link__description
+  padding $internal-spacing
+  margin 0
+  border 1px solid $dev-color

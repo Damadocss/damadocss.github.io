@@ -1,0 +1,61 @@
+.about
+  border 1px solid $dev-color
+  padding $internal-spacing
+
+.about__figure
+  border 1px solid $dev-color
+  margin 0
+  display flex
+  flex-direction column
+  align-items baseline
+  justify-content center
+
+.about__figure__avatar
+  border-radius 50%
+  width 200px
+  margin 0 auto
+
+@media $small-screen
+  .about__figure__avatar
+    width 300px
+
+@media $medium-screen
+  .about__figure__avatar
+    width 400px
+
+.about__figure__figcap
+  margin 0 auto
+  border 1px solid $dev-color
+
+.about__figure__figcap__title
+  border 1px solid $dev-color
+  font 400 40px 'Roboto', sans-serif
+  margin 0 auto
+  text-align center
+  color $light-color
+
+@media $small-screen
+  .about__figure__figcap__title
+    font-size 42px
+    padding $internal-spacing
+
+@media $medium-screen
+  .about__figure__figcap__title
+    font-size 52px
+
+.about__figure__figcap__text-main
+  border 1px solid $dev-color
+  color $text-color
+  font-weight 900
+  font-size 48px
+
+.about__figure__figcap__description
+  border 1px solid $dev-color
+  font lighter 32px 'Satisfy', cursive
+  margin 0
+  padding $internal-spacing
+  color $title-color
+
+.about__figure__figcap__link
+  border 1px solid $dev-color
+  color $light-color

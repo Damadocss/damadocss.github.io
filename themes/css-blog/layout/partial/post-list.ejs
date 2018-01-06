@@ -1,0 +1,17 @@
+<% page.posts.forEach(post => {%>
+  
+  <article class='post-preview'>
+    
+    <a class='post-preview__link' href='<%- post.url %>' target="<%- post.external_link === true ? '_blank' : '_self' %>">
+      <header class='post-preview__link__header'>
+        <h2 class='post-preview__link__header__title'> <%- post.title %> </h2>
+        <span class='post-preview__link__header__text-info'>Publicado em: </span>
+        <time class='post-preview__link__header__date' datatime="<%= post.date.toDate().toISOString() %>"> <%- post.date.format(config.date_format) %> </time>
+      </header>
+
+      <p class='post-preview__link__description'> <%- post.description %> </p>
+    </a>
+
+  </article>
+
+<% }) %>
