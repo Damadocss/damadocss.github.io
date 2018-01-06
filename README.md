@@ -35,33 +35,34 @@ I'm using Hexo for develop this blog, [see documentation](https://hexo.io/pt-br/
 
 
 ## Folders Structure
+
 	.
 	├── scaffolds/
 	├── source/
-	|   └── _posts/
+	|   └── _posts
 	├── themes
 	|   └── css-blog/
-	|   		├── languages/
-	|   		├── layout/
-	|   		├──	└── partial/
-	|   		├── scripts/
-	|   		├── source/
-	|   				└── assets/
-					|   		├── icon/
-					|   		├── img/
-					|   		└── styles/
-	|   		└── _config.yml
+	|       ├── languages/
+	|       ├── layout/
+	|       |   └── partial/
+	|       ├── scripts/
+	|       ├── source/
+	|       |   └── assets/
+	|       |       ├── icon/
+	|       |       ├── img/
+	|       |       └── styles/
+	|       └── _config.yml
 	├──  _config.yml
 	├── .gitignore
+	├── package.json
 	├── CONTRIBUTING.md
 	├── LICENSE.md
-	├── package.json
 	└── README.md
 
 
 ## Versioning
 
-To keep better organization of releases we follow the [Semantic Versioning 2.0.0](http://semver.org/) guidelines.
+To keep better organization of releases we follow the [Semantic Versioning 2.0.0](http://semver.org/) guidelines.	
 
 
 ## Contributing
