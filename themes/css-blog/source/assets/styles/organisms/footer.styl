@@ -2,8 +2,62 @@
   margin 0 auto
   border 1px solid $dev-color
   width 100%
+  background $light-color
+  padding 0 $external-spacing
+  height 80px
+  grid-area footer
 
-.blog__footer__made-with-love
-  padding $internal-spacing
+.blog__footer__heart
   border 1px solid $dev-color
-  background pink
+  padding $internal-spacing
+  font-size 13px
+  width 100%
+  text-align center
+  color #fff
+
+.blog__footer__heart__css 
+  position relative
+
+  display inline-block
+
+  margin 0 5px
+  width 10px
+  height 10px
+
+  animation pulse .5s infinite alternate ease-in
+
+  background-color $title-color
+
+.blog__footer__heart__css:before 
+  position absolute
+  top 0
+  left 50%
+
+  width 10px
+  height 10px
+
+  content ""
+
+  border-radius 50%
+  background-color $title-color
+
+.blog__footer__heart__css:after 
+  position absolute
+  top 50%
+  left 0
+
+  width 10px
+  height 10px
+
+  content ""
+
+  border-radius 50%
+  background-color $title-color
+
+@keyframes pulse 
+  from {transform: rotate(-135deg) scale(1)}
+  to   {transform: rotate(-135deg) scale(1.2)}
+
+.blog__footer__heart__author
+  text-decoration none
+  color $title-color

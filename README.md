@@ -26,12 +26,12 @@ $ yarn install
 $ hexo serve
 ```
 
-Go to: [localhost:8080](http://localhost:4000)
+Go to: [localhost:4000](http://localhost:4000)
 
 
 ## Stack
 
-I'm using Hexo for developer this blog, [see documentation](https://hexo.io/pt-br/docs/)!
+I'm using Hexo for develop this blog, [see documentation](https://hexo.io/pt-br/docs/)!
 
 
 ## Folders Structure

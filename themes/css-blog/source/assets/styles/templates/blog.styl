@@ -1,10 +1,14 @@
 .blog
   width 100%
-  margin 0 auto
-  padding 0 $external-spacing  
-  display flex
-  flex-direction column
+  margin 0 auto 
   font 500 16px 'Roboto', sans-serif
   line-height 1.67
   color $light-color
   border 1px solid $dev-color
+  
+  display grid
+  grid-gap $external-spacing
+  grid-template-columns auto
+  grid-template-rows 80px auto 80px
+  grid-template-areas 'header' 'main' 'footer'
+  
