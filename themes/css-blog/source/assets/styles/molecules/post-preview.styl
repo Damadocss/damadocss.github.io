@@ -2,8 +2,10 @@
   border 1px solid $dev-color
   border-radius 5px
   padding $internal-spacing
+  margin-bottom $external-spacing
 
   &:hover
+  &:focus
     background $hover-color
     cursor pointer
 
@@ -15,6 +17,10 @@
   title()
   border 1px solid $dev-color
 
+  &:hover
+  &:focus
+    color $title-color
+
 @media $small-screen
   .post-preview__link__header__title
     font-size 42px
@@ -25,7 +31,7 @@
 
 .post-preview__link__header__text-info
   padding $internal-spacing
-  
+
 .post-preview__link__header__date
   padding $internal-spacing
   border 1px solid $dev-color
