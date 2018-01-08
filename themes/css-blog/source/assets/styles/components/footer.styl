@@ -3,13 +3,23 @@
   border 1px solid $dev-color
   width 100%
   background $light-color
-  padding 0 $external-spacing
   height 80px
   grid-area footer
+  display flex
+  align-items center
+  justify-content center
+  padding 0 $spacing-level1
+
+@media(min-width 500px)
+  .blog__footer
+    padding 0 $spacing-level2
+
+@media(min-width 760px)
+  .blog__footer
+    padding 0 $spacing-level4
 
 .blog__footer__heart
   border 1px solid $dev-color
-  padding $internal-spacing
   font-size 13px
   width 100%
   text-align center
@@ -17,42 +27,32 @@
 
 .blog__footer__heart__css 
   position relative
-
   display inline-block
-
   margin 0 5px
   width 10px
   height 10px
-
   animation pulse .5s infinite alternate ease-in
-
-  background-color $title-color
+  background-color $hover-color
 
 .blog__footer__heart__css:before 
   position absolute
   top 0
   left 50%
-
   width 10px
   height 10px
-
   content ""
-
   border-radius 50%
-  background-color $title-color
+  background-color $hover-color
 
 .blog__footer__heart__css:after 
   position absolute
   top 50%
   left 0
-
   width 10px
   height 10px
-
   content ""
-
   border-radius 50%
-  background-color $title-color
+  background-color $hover-color
 
 @keyframes pulse 
   from {transform: rotate(-135deg) scale(1)}
@@ -60,4 +60,4 @@
 
 .blog__footer__heart__author
   text-decoration none
-  color $title-color
+  color $hover-color

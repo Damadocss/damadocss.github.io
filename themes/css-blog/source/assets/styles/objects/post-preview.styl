@@ -1,42 +1,21 @@
 .post-preview
   border 1px solid $dev-color
   border-radius 5px
-  padding $internal-spacing
-  margin-bottom $external-spacing
+  padding $spacing-level3 $spacing-level1
 
   &:hover
   &:focus
-    background $hover-color
+    border .5px solid $bg-color
     cursor pointer
+
+@media(min-width 500px)
+  .post-preview
+    padding $spacing-level3 $spacing-level12
+
+@media(min-width 760px)
+  .post-preview
+    padding $spacing-level4 $spacing-level2
 
 .post-preview__link
   text-decoration none
   color $description-color
-
-.post-preview__link__header__title
-  title()
-  border 1px solid $dev-color
-
-  &:hover
-  &:focus
-    color $title-color
-
-@media(min-width 500px)
-  .post-preview__link__header__title
-    font-size 42px
-
-@media(min-width 760px)
-  .post-preview__link__header__title
-    font-size 52px
-
-.post-preview__link__header__text-info
-  padding $internal-spacing
-
-.post-preview__link__header__date
-  padding $internal-spacing
-  border 1px solid $dev-color
-
-.post-preview__link__description
-  padding $internal-spacing
-  margin 0
-  border 1px solid $dev-color

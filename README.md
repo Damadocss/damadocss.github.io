@@ -32,6 +32,7 @@ Go to: [localhost:4000](http://localhost:4000)
 ## Stack
 
 I'm using Hexo for develop this blog, [see documentation](https://hexo.io/pt-br/docs/)!
+Using [BEM like nomenclature pattern](http://getbem.com/introduction/) and [ITCSS like architecture pattern](https://speakerdeck.com/dafed/managing-css-projects-with-itcss)
 
 
 ## Folders Structure

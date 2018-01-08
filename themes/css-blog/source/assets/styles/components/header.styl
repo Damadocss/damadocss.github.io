@@ -2,5 +2,11 @@
   margin 0 auto
   border 1px solid $dev-color
   width 100%
-  padding 0 $external-spacing
   grid-area header 
+  display flex
+  align-items center
+  justify-content flex-end
+
+@media(min-width 760px)
+  .blog__header
+    padding 0 $spacing-level2

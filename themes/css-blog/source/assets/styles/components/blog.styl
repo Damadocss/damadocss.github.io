@@ -1,14 +1,22 @@
 .blog
   width 100%
   margin 0 auto 
-  font 500 16px 'Roboto', sans-serif
-  line-height 1.67
-  color $light-color
+  font 400 14px/1.67 'Open Sans', sans-serif
+  text-rendering optimizeSpeed
+  letter-spacing 0
   border 1px solid $dev-color
   
   display grid
-  grid-gap $external-spacing
+  grid-gap $spacing-level1
   grid-template-columns auto
   grid-template-rows 80px auto 80px
   grid-template-areas 'header' 'main' 'footer'
   
+
+@media(min-width 500px)
+  .blog
+    grid-gap $spacing-level2
+
+@media(min-width 760px)
+  .blog
+    grid-gap $spacing-level4

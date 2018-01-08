@@ -1,6 +1,6 @@
 .about
   border 1px solid $dev-color
-  padding $internal-spacing
+  width 100%
 
 .about__figure
   border 1px solid $dev-color
@@ -12,41 +12,43 @@
 
 .about__figure__avatar
   border-radius 50%
-  width 200px
+  width 150px
   margin 0 auto
-
-.about__figure__figcap
-  margin 0 auto
-  border 1px solid $dev-color
-
-.about__figure__figcap__title
-  border 1px solid $dev-color
-  font 400 40px 'Roboto', sans-serif
-  margin 0 auto
-  text-align center
-  color $light-color
 
 @media(min-width 500px)
-  .about__figure__figcap__title
-    font-size 42px
-    padding $internal-spacing
+  .about__figure__avatar
+    width 200px
 
-@media(min-width 760px)
-  .about__figure__figcap__title
-    font-size 52px
+.about__figure__figcap
+  margin $spacing-level2 auto 0 auto
+  border 1px solid $dev-color
 
 .about__figure__figcap__text-main
   border 1px solid $dev-color
-  color $text-color
-  font-weight 900
-  font-size 48px
+  color $hover-color
+  font 700 40px 'Arvo', serif
+
+@media(min-width 500px)
+  .about__figure__figcap__text-main
+    font-size 42px
+
+@media(min-width 500px)
+  .about__figure__figcap__text-main
+    font-size 48px
 
 .about__figure__figcap__description
   border 1px solid $dev-color
-  font lighter 32px 'Satisfy', cursive
+  font lighter 22px 'Satisfy', cursive
   margin 0
-  padding $internal-spacing
   color $title-color
+
+@media(min-width 500px)
+  .about__figure__figcap__description
+    font-size 28px
+
+@media(min-width 500px)
+  .about__figure__figcap__description
+    font-size 32px
 
 .about__figure__figcap__link
   border 1px solid $dev-color

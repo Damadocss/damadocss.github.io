@@ -1,0 +1,50 @@
+.title-level1
+  title()
+  font-size 32px
+  font-weight 300
+  
+  &:hover
+  &:focus
+    color $hover-color
+
+@media(min-width 500px)
+  .title-level1
+    font-size 40px
+
+@media(min-width 500px)
+  .title-level1
+    font-size 45px
+
+.title-level2
+  title()
+
+  &:hover
+  &:focus
+    color $hover-color
+
+@media(min-width 500px)
+  .title-level2
+    font-size 36px
+
+@media(min-width 760px)
+  .title-level2
+    font-size 40px
+
+.paragraph
+  border 1px solid $dev-color
+  text-rendering optimizeLegibility
+  color rgba(0,0,0,.84)
+  font-size 14px
+  line-height 1.8
+  letter-spacing -.003em
+  margin 0
+
+.small-text
+  border 1px solid $dev-color
+  color rgba(0,0,0,.54)
+  font 600 12px/1.67 'Open Sans', sans-serif
+
+.highlight-text
+  border 1px solid $dev-color
+  color rgba(0,0,0,.54)
+  font-size 28px

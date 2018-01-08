@@ -1,34 +1,44 @@
 .nav
   display flex
   align-items center
-  justify-content flex-end
-  padding $internal-spacing
+  justify-content center
   border 1px solid $dev-color
+  width 100%
+
+@media(min-width 500px)
+  .nav
+    justify-content flex-end
 
 .nav__list
   margin 0
   padding 0
   display flex
   list-style none
-  //display none
 
 .nav__list__item
-  margin 0 5px
   display flex
   align-items center
   justify-content center
+  padding $spacing-level1
+
+@media(min-width 500px)
+  .nav__list__item
+    justify-content flex-end
 
 .nav__list__link
   text-decoration none
-  padding $internal-spacing
-  color $light-color
-  font 500 18px 'Roboto', sans-serif
+  font 600 14px 'Open Sans', sans-serif
   color $light-color
 
   &:hover
   &:focus
-    color $title-color
+    color $hover-color
+    border-bottom 1px solid $hover-color
+
+@media(min-width 500px)
+  .nav__list__link
+    padding $spacing-level1
 
 .nav__img
   object-fit contain
-  padding $internal-spacing
+  margin 0 0 0 $spacing-level1

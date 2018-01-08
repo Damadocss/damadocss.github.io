@@ -3,5 +3,13 @@
   border 1px solid $dev-color
   width 100%
   max-width $page-width
-  padding 0 $external-spacing
+  padding 0 $spacing-level1
   grid-area main
+
+@media(min-width 500px)
+  .blog__main
+    padding 0 $spacing-level2
+
+@media(min-width 760px)
+  .blog__main
+    padding 0 $spacing-level4
