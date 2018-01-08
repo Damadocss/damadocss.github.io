@@ -1,1 +1,3 @@
-<h1>Page</h1>
+<% if(is_current(path, [page.path])) { %>
+	<%- partial(`pages/${page.title}`) %>
+<% } %>

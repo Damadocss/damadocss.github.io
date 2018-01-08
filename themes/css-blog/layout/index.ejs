@@ -1,17 +1,15 @@
-<main class='blog__main'>
-  <div class='about'>
-    <figure class='about__figure'>
-      <img class='about__figure__avatar' src="<%- url_for('./assets/img/avatar.jpeg', itemprop="avatar") %>">
-      
-      <figcaption class='about__figure__figcap'>
-        <h1 class='about__figure__figcap__title'>A Dama do <span class='about__figure__figcap__text-main'>CSS</span></h1>
-        <p class='about__figure__figcap__description'>A blog about Front-end Developer <br>
-          by <a class='about__figure__figcap__link' href='https://simoneas02.github.io/'>Simone Amorim</a>
-        </p>
-      </figcaption>
-    </figure>
-  </div>
-  
-  <%- partial('partial/post-list') %>
 
-</main>
+<div class='about'>
+  <figure class='about__figure'>
+    <img class='about__figure__avatar' src="<%- url_for('./assets/img/avatar.jpeg', itemprop="avatar") %>">
+    
+    <figcaption class='about__figure__figcap'>
+      <h1 class='about__figure__figcap__title'>A Dama do <span class='about__figure__figcap__text-main'>CSS</span></h1>
+      <p class='about__figure__figcap__description'>A blog about Front-end Developer <br>
+        by <a class='about__figure__figcap__link' href='https://simoneas02.github.io/'>Simone Amorim</a>
+      </p>
+    </figcaption>
+  </figure>
+</div>
+
+<%- partial('partial/post-list') %>
