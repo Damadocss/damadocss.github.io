@@ -78,3 +78,12 @@ theme: css-blog
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+# Header
+menu:
+  Home: /
+  Artigos: /artigos
+  About: /about
+
+# Content
+excerpt_link: Read More
