@@ -3,7 +3,16 @@
   
   <%- partial('partial/head') %>
 
-  <body>
+  <% if(is_home()) { %>
+    <body class="blog-home">
+
+  <% } else if(path === 'artigos/index.html') { %>
+    <body class="blog-artigo">
+
+  <% } else { %>
+    <body class="blog-about">
+  <% } %>
+
     <div class='blog'>
       <%- partial('partial/header') %>
       
@@ -13,6 +22,10 @@
   
       <%- partial('partial/footer') %>
     </div>
+
+    <% console.log()%>
+
+    <%- js('assets/scripts/main.js') %>
   </body>
 
 </html>
