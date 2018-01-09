@@ -12,4 +12,8 @@
   </figure>
 </div>
 
-<%- partial('partial/post-list') %>
+<% page.posts.forEach(post => {%>
+  <%- partial('partial/post', {post: post}) %>
+<% }) %>
+
+<% console.log()%>

@@ -1,0 +1,15 @@
+<article class='post-preview'>
+  
+  <a class='post-preview__link' href='<%- post.url %>' target="<%- post.external_link === true ? '_blank' : '_self' %>">
+    <h2 class='title-level2'> <%- post.title %> </h2>
+    <span class='small-text'>Publicado em: </span>
+    <time class='small-text' datatime="<%= post.date.toDate().toISOString() %>"> <%- post.date.format(config.date_format) %> </time>
+  </a>
+
+  <p class='paragraph'> <%- post.description %> </p>
+
+  <a class='post-preview__read-more' href="<%- post.url %>" target="<%- post.external_link === true ? '_blank' : '_self' %>">
+    <%= theme.excerpt_link %> >>>
+  </a>
+
+</article>
